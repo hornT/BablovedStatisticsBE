@@ -5,5 +5,5 @@ const {
 
 module.exports = {
     PORT: Number(PORT),
-    MONGOLAB_URI: MONGOLAB_URI
+    MONGOLAB_URI
 }

@@ -7,9 +7,8 @@ const db = require('./db');
 
 const router = new Router()
 
-router.get('/product', async (ctx, next) => {
-    //ctx.body = await product.getAll()
-    ctx.body = { id: 123 };
+router.get('/rates', async (ctx, next) => {
+    ctx.body = await db.getRates();
 });
 
 app.use(router.routes());
